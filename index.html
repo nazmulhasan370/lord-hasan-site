@@ -1,0 +1,95 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>লর্ড হাসানের সাইট</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>লর্ড হাসান</h1>
+      <nav>
+        <a href="#about">পরিচিতি</a>
+        <a href="#skills">দক্ষতা</a>
+        <a href="#projects">প্রজেক্ট</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h2>হাই! আমি লর্ড হাসান</h2>
+          <p>ছাত্র • অ্যাকাউন্টিং অনুরাগী • প্রোগ্রামিং ও প্রজেক্ট প্রেমী</p>
+          <a class="btn" href="#contact">যোগাযোগ করো</a>
+        </div>
+        <div class="hero-image">
+          <!-- placeholder circle -->
+          <div class="avatar">LH</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>পরিচিতি</h3>
+      <p>আমি একজন উৎসাহী ছাত্র, হিসাব শিখছি এবং ওয়েব ডেভেলপমেন্ট ও প্রজেক্ট বানাতে আগ্রহী। এই সাইটটি তোমার পোর্টফোলিও বা পরিচিতি হিসেবে ব্যবহার করতে পারো।</p>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h3>দক্ষতা</h3>
+      <ul class="skill-list">
+        <li>
+          <span>অ্যাকাউন্টিং</span>
+          <div class="bar"><div style="width:85%"></div></div>
+        </li>
+        <li>
+          <span>HTML / CSS</span>
+          <div class="bar"><div style="width:70%"></div></div>
+        </li>
+        <li>
+          <span>JavaScript</span>
+          <div class="bar"><div style="width:55%"></div></div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>প্রজেক্ট</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>প্রজেক্ট নাম ১</h4>
+          <p>সংক্ষিপ্ত বর্ণনা — এটি একটি উদাহরণ প্রজেক্ট।</p>
+        </article>
+        <article class="card">
+          <h4>প্রজেক্ট নাম ২</h4>
+          <p>সংক্ষিপ্ত বর্ণনা — এটি আরেকটি উদাহরণ।</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>যোগাযোগ</h3>
+      <form id="contactForm">
+        <label>নাম<input type="text" id="name" required></label>
+        <label>ই-মেইল<input type="email" id="email" required></label>
+        <label>বার্তা<textarea id="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">পাঠাও</button>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> লর্ড হাসান — সর্বসত্তা সংরক্ষিত</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
